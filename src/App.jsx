@@ -4,7 +4,7 @@ import LogoFired from './components/LogoFired';
 import ButtonFired from './components/ButtonFired';
 import FooterFired from './components/FooterFired';
 import LogoImersao from './components/LogoImersao';
-import BannerFired from './components/BannerFired';
+import { BannerFired, Text } from './components/BannerFired';
 import TagFired from './components/TagFired';
 import TitleFired from './components/TitleFired';
 import DescriptionFired from './components/DescriptionFired';
@@ -23,11 +23,13 @@ function App() {
       </HeaderFired>
 
       <BannerFired>
-        <TagFired>FrontEnd</TagFired>
-        <TitleFired>Gueio Runner - Kikano Reeves</TitleFired>
-        <DescriptionFired>
-          O Lucas Melo nesse vídeo fez o personagem Kikano Reeves do jogo Gueio Runner
-        </DescriptionFired>
+        <Text>
+          <TagFired>FrontEnd</TagFired>
+          <TitleFired>Gueio Runner - Kikano Reeves</TitleFired>
+          <DescriptionFired>
+            O Lucas Melo nesse vídeo fez o personagem Kikano Reeves do jogo Gueio Runner
+          </DescriptionFired>
+        </Text>
 
         <ThumbFired src={kikano} alt="Thumb do Lucas Melo fazendo o Kikano Reeves" />
       </BannerFired>
