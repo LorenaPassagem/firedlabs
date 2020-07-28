@@ -7,6 +7,7 @@ import LogoImersao from './components/LogoImersao';
 import BannerFired from './components/BannerFired';
 import TagFired from './components/TagFired';
 import TitleFired from './components/TitleFired';
+import DescriptionFired from './components/DescriptionFired';
 
 function App() {
   return (
@@ -20,6 +21,9 @@ function App() {
       <BannerFired>
         <TagFired>FrontEnd</TagFired>
         <TitleFired>Gueio Runner - Kikano Reeves</TitleFired>
+        <DescriptionFired>
+          O Lucas Melo nesse vídeo fez o personagem Kikano Reeves do jogo Gueio Runner
+        </DescriptionFired>
       </BannerFired>
 
       <FooterFired>
