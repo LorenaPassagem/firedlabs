@@ -5,6 +5,7 @@ import ButtonFired from './components/ButtonFired';
 import FooterFired from './components/FooterFired';
 import LinkFired from './components/LinkFired';
 import HighlightFired from './components/HighlightFired';
+import LogoImersao from './components/LogoImersao';
 
 function App() {
   return (
@@ -18,8 +19,7 @@ function App() {
       <FooterFired>
         <LogoFired />
         <p>
-          Site feito na <HighlightFired>#ImersãoReact</HighlightFired> da {' '}
-          <LinkFired href="https://alura.com.br">Alura</LinkFired>
+          Site feito na <a href="https://alura.com.br"><LogoImersao /></a>
         </p>
       </FooterFired>
     </>
