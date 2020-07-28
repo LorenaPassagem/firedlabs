@@ -3,9 +3,9 @@ import HeaderFired from './components/HeaderFired';
 import LogoFired from './components/LogoFired';
 import ButtonFired from './components/ButtonFired';
 import FooterFired from './components/FooterFired';
-import LinkFired from './components/LinkFired';
-import HighlightFired from './components/HighlightFired';
 import LogoImersao from './components/LogoImersao';
+import BannerFired from './components/BannerFired';
+import TagFired from './components/TagFired';
 
 function App() {
   return (
@@ -15,6 +15,10 @@ function App() {
 
         <ButtonFired>Novo vídeo</ButtonFired>
       </HeaderFired>
+
+      <BannerFired>
+        <TagFired>FrontEnd</TagFired>
+      </BannerFired>
 
       <FooterFired>
         <LogoFired />

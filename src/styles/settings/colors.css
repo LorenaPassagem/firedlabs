@@ -1,5 +1,14 @@
 :root {
-    --color-primary-medium: #2A7AE4;
+    --color-primary-medium: #ee3f3f;
     --color-black-dark: #000;
     --color-gray-light: #F5F5F5;
+
+    --color-frontend: #6BD1FF;
+    --color-infra: #9CD33B;
+    --color-backend: #00C86F;
+    --color-marketing: #6B5BE2;
+    --color-mobile: #FFBA05;
+    --color-inovation: #FF8C2A;
+    --color-ux: #DC6EBE;
+    --color-data-science: #9CD33B;
 }
