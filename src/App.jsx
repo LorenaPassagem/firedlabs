@@ -6,6 +6,7 @@ import FooterFired from './components/FooterFired';
 import LogoImersao from './components/LogoImersao';
 import BannerFired from './components/BannerFired';
 import TagFired from './components/TagFired';
+import TitleFired from './components/TitleFired';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
 
       <BannerFired>
         <TagFired>FrontEnd</TagFired>
+        <TitleFired>Gueio Runner - Kikano Reeves</TitleFired>
       </BannerFired>
 
       <FooterFired>
