@@ -1,18 +1,26 @@
 import styled from 'styled-components';
 import ButtonFired from '../ButtonFired';
 import LogoFired from '../LogoFired';
+import container from '../../tools/container';
 
-const HeaderFired = styled.header`
+export const HeaderFired = styled.header`  
+    background-color: var(--color-black-dark);
+    border-bottom: 4px solid var(--color-primary-medium);
+    padding: 20rem 0;
+
+    @media(max-width: 800px) {
+        padding: 15rem 16rem;  
+    }
+`;
+
+export const Wrapper = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20rem 30rem;
-    background-color: var(--color-black-dark);
-    border-bottom: 4px solid var(--color-primary-medium);
+    ${container};
 
     @media(max-width: 800px) {
         justify-content: center;
-        padding: 15px 16px;
 
         & > ${LogoFired} {
             height: 35px;
@@ -28,6 +36,6 @@ const HeaderFired = styled.header`
             width: 100vw;
         }
     }
-`;
 
-export default HeaderFired;
+    
+`
