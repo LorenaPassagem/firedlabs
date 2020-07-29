@@ -1,6 +1,7 @@
 :root {
     --color-primary-medium: #ee3f3f;
     --color-black-dark: #000;
+    --color-black-medium: rgba(0, 0, 0, .6);
     --color-gray-light: #F5F5F5;
 
     --color-frontend: #6BD1FF;
@@ -11,4 +12,5 @@
     --color-inovation: #FF8C2A;
     --color-ux: #DC6EBE;
     --color-data-science: #9CD33B;
+    --color-pixelart: #f91c24;
 }
