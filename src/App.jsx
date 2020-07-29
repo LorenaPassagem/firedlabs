@@ -35,6 +35,7 @@ function App() {
         <ThumbFired
           src={kikano}
           alt="Thumb do Lucas Melo fazendo o Kikano Reeves"
+          title="Gueio Runner - Kikano Reeves"
           avatar={lucasMelo}
           channelName="Lucasmml"
         />

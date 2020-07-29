@@ -3,6 +3,8 @@ import styled from 'styled-components';
 export const Channel = styled.figcaption`
     font-size: 20rem;
     color: var(--color-gray-light);
+    text-shadow: 2px 2px 2px var(--color-black-dark);
+    font-weight: bold;
 `
 
 export const Avatar = styled.img`
