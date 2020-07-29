@@ -9,7 +9,8 @@ import TagFired from './components/TagFired';
 import TitleFired from './components/TitleFired';
 import DescriptionFired from './components/DescriptionFired';
 import ThumbFired from './components/ThumbFired';
-import kikano from './assets/img/kikano.png'
+import kikano from './assets/img/kikano.png';
+import lucasMelo from './assets/img/lucas-melo.png';
 
 function App() {
   return (
@@ -31,7 +32,12 @@ function App() {
           </DescriptionFired>
         </Text>
 
-        <ThumbFired src={kikano} alt="Thumb do Lucas Melo fazendo o Kikano Reeves" />
+        <ThumbFired
+          src={kikano}
+          alt="Thumb do Lucas Melo fazendo o Kikano Reeves"
+          avatar={lucasMelo}
+          channelName="Lucasmml"
+        />
       </BannerFired>
 
       <FooterFired>
