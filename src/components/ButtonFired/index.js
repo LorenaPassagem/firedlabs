@@ -1,24 +1,36 @@
 import styled from 'styled-components';
 
 const ButtonFired = styled.button`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
   padding: 12rem 30rem;
-  background-color: var(--color-black-dark);
   color: var(--color-gray-light);
   border: 1px solid var(--color-gray-light);
   font-size: 16rem;
   cursor: pointer;
   text-decoration: none;
-  transition: background-color 200ms linear,
-    transform 200ms cubic-bezier(0, 0, 0.73, 2.24);
+  overflow: hidden;
 
-  &:hover {
+  &::before {
+    content: '';
+    position: absolute;
+    opacity: 1;
+    width: 100%;
+    height: 100%;
     background-color: var(--color-primary-medium);
-    transform: scale(1.1);
+    transform: translateX(-100%);
+    transition: transform 200ms linear;
   }
 
-  &:active {
-    transition: background-color 200ms linear, transform 100ms linear;
-    transform: scale(0.95);
+  &::after {
+    content: '${({ children }) => children}';
+    position: absolute;
+  }
+
+  &:hover::before {
+    transform: translateX(0);
   }
 `;
 
