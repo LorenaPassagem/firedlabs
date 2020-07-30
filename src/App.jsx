@@ -19,7 +19,9 @@ function App() {
         <Wrapper>
           <LogoFired />
 
-          <ButtonFired>Novo vídeo</ButtonFired>
+          <ButtonFired as="a" href="/video/new">
+            Novo vídeo
+          </ButtonFired>
         </Wrapper>
       </HeaderFired>
 
@@ -28,7 +30,8 @@ function App() {
           <TagFired>PixelArt</TagFired>
           <TitleFired>Gueio Runner - Kikano Reeves</TitleFired>
           <DescriptionFired>
-            O Lucas Melo nesse vídeo fez o personagem Kikano Reeves do jogo Gueio Runner
+            O Lucas Melo nesse vídeo fez o personagem Kikano Reeves do jogo
+            Gueio Runner
           </DescriptionFired>
         </Text>
 
@@ -45,7 +48,10 @@ function App() {
       <FooterFired>
         <LogoFired />
         <p>
-          Site feito na <a href="https://alura.com.br"><LogoImersao /></a>
+          Site feito na
+          <a href="https://alura.com.br" aria-label="Logo">
+            <LogoImersao />
+          </a>
         </p>
       </FooterFired>
     </>
