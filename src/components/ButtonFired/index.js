@@ -8,6 +8,18 @@ const ButtonFired = styled.button`
   font-size: 16rem;
   cursor: pointer;
   text-decoration: none;
+  transition: background-color 200ms linear,
+    transform 200ms cubic-bezier(0, 0, 0.73, 2.24);
+
+  &:hover {
+    background-color: var(--color-primary-medium);
+    transform: scale(1.1);
+  }
+
+  &:active {
+    transition: background-color 200ms linear, transform 100ms linear;
+    transform: scale(0.95);
+  }
 `;
 
 export default ButtonFired;

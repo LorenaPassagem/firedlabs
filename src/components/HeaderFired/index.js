@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import ButtonFired from '../ButtonFired';
 import LogoFired from '../LogoFired';
-import container from '../../tools/container';
+import container from '../../styles/tools/container';
 
 export const HeaderFired = styled.header`
   background-color: var(--color-black-dark);
