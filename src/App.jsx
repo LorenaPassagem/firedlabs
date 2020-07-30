@@ -25,7 +25,7 @@ function App() {
 
       <BannerFired>
         <Text>
-          <TagFired>PixerArt</TagFired>
+          <TagFired>PixelArt</TagFired>
           <TitleFired>Gueio Runner - Kikano Reeves</TitleFired>
           <DescriptionFired>
             O Lucas Melo nesse vídeo fez o personagem Kikano Reeves do jogo Gueio Runner
@@ -38,6 +38,7 @@ function App() {
           title="Gueio Runner - Kikano Reeves"
           avatar={lucasMelo}
           channelName="Lucasmml"
+          timer="02:20:34"
         />
       </BannerFired>
 
