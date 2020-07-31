@@ -20,7 +20,8 @@ const ButtonFired = styled.button`
     width: 100%;
     height: 100%;
     background-color: var(--color-primary-medium);
-    transform: translateX(-100%);
+    transform-origin: bottom left;
+    transform: translateX(100%) scaleX(1.5) skew(-30deg);
     transition: transform 200ms linear;
   }
 
@@ -30,7 +31,7 @@ const ButtonFired = styled.button`
   }
 
   &:hover::before {
-    transform: translateX(0);
+    transform: translateX(-30%) scaleX(1.5) skew(-30deg);
   }
 `;
 
