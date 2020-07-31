@@ -6,7 +6,7 @@ export const Timer = styled.span`
   right: var(--space);
   bottom: var(--space);
   font-size: 18rem;
-  color: var(--color-gray-light);
+  color: var(--color-floral-white);
   background-color: var(--color-black-medium);
   padding: 2rem 4rem;
   opacity: 0;
@@ -18,7 +18,7 @@ export const Title = styled.figcaption`
   left: var(--space);
   bottom: var(--space);
   font-size: 25rem;
-  color: var(--color-gray-light);
+  color: var(--color-floral-white);
   font-weight: 300;
   background-color: var(--color-black-medium);
   padding: 4rem 6rem;
@@ -34,7 +34,7 @@ export const Thumb = styled.img`
 
 export const WrapperThumb = styled.figure`
   position: relative;
-  border: var(--border) solid var(--color-pixelart);
+  border: var(--border) solid var(--color-fiery-rose);
   width: 640px;
   overflow: hidden;
   cursor: pointer;
@@ -57,7 +57,7 @@ export const Background = styled.div`
   --move-space: calc(var(--space) * -1);
 
   position: relative;
-  background-color: var(--color-pixelart);
+  background-color: var(--color-fiery-rose);
 
   &::before,
   &::after {
@@ -65,7 +65,7 @@ export const Background = styled.div`
     position: absolute;
     width: calc(var(--space) * 1.4);
     height: calc(var(--space) * 1.4);
-    background-color: var(--color-pixelart);
+    background-color: var(--color-fiery-rose);
     transition: transform 100ms linear;
   }
 

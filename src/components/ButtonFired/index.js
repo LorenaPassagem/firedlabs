@@ -6,9 +6,9 @@ const ButtonFired = styled.button`
   align-items: center;
   position: relative;
   padding: 12rem 30rem;
-  color: var(--color-gray-light);
-  border: 1px solid var(--color-gray-light);
-  font-size: 16rem;
+  color: var(--color-floral-white);
+  border: 1px solid var(--color-floral-white);
+  font-size: 22rem;
   cursor: pointer;
   text-decoration: none;
   overflow: hidden;
@@ -19,7 +19,7 @@ const ButtonFired = styled.button`
     opacity: 1;
     width: 100%;
     height: 100%;
-    background-color: var(--color-primary-medium);
+    background-color: var(--color-fiery-rose);
     transform-origin: bottom left;
     transform: translateX(100%) scaleX(1.5) skew(-30deg);
     transition: transform 200ms linear;
@@ -28,10 +28,15 @@ const ButtonFired = styled.button`
   &::after {
     content: '${({ children }) => children}';
     position: absolute;
+    
   }
 
   &:hover::before {
-    transform: translateX(-30%) scaleX(1.5) skew(-30deg);
+    transform: translateX(-40%) scaleX(1.5) skew(-30deg);
+  }
+
+  &:active::after {
+    transform: scale(2);
   }
 `;
 

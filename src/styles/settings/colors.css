@@ -1,16 +1,9 @@
 :root {
-  --color-primary-medium: #ee3f3f;
-  --color-black-dark: #000;
+  --color-fiery-rose: #f25a70;
+  --color-arsenic: #3a4042;
+  --color-dark-slate-grey: #385062;
+  --color-old-silver: #828282;
   --color-black-medium: rgba(0, 0, 0, 0.6);
-  --color-gray-light: #f5f5f5;
-
-  --color-frontend: #6bd1ff;
-  --color-infra: #9cd33b;
-  --color-backend: #00c86f;
-  --color-marketing: #6b5be2;
-  --color-mobile: #ffba05;
-  --color-inovation: #ff8c2a;
-  --color-ux: #dc6ebe;
-  --color-data-science: #9cd33b;
-  --color-pixelart: #f91c24;
+  --color-floral-white: #fffcee;
+  --color-pomp-and-power: #7c5e99;
 }

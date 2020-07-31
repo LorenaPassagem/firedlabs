@@ -4,8 +4,8 @@ import LogoFired from '../LogoFired';
 import container from '../../styles/tools/container';
 
 export const HeaderFired = styled.header`
-  background-color: var(--color-black-dark);
-  border-bottom: 4px solid var(--color-primary-medium);
+  background-color: var(--color-arsenic);
+  border-bottom: 4px solid var(--color-floral-white);
   padding: 20rem 0;
 
   @media (max-width: 800px) {
@@ -27,7 +27,7 @@ export const Wrapper = styled.div`
     }
 
     & > ${ButtonFired} {
-      background-color: var(--color-primary-medium);
+      background-color: var(--color-fiery-rose);
       border-radius: 0;
       border: 0;
       position: fixed;

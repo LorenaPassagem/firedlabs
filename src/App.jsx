@@ -1,9 +1,4 @@
 import React from 'react';
-import { HeaderFired, Wrapper } from './components/HeaderFired';
-import LogoFired from './components/LogoFired';
-import ButtonFired from './components/ButtonFired';
-import FooterFired from './components/FooterFired';
-import LogoImersao from './components/LogoImersao';
 import { BannerFired, Text } from './components/BannerFired';
 import TagFired from './components/TagFired';
 import TitleFired from './components/TitleFired';
@@ -11,49 +6,88 @@ import DescriptionFired from './components/DescriptionFired';
 import ThumbFired from './components/ThumbFired';
 import kikano from './assets/img/kikano.png';
 import lucasMelo from './assets/img/lucas-melo.png';
+import HeaderOpen from './components/HeaderOpen';
+import FooterOpen from './components/FooterOpen';
+import SectionFired from './components/SectionFired';
+
+const videos = [
+  {
+    src: { kikano },
+    alt: 'Boas vindas a FiredLabs',
+    title: 'Boa vindas a FiredLabs',
+    avatar: { lucasMelo },
+    channelName: 'Lucasmml',
+    timer: '00:01:00',
+    link: 'https:"//twitch.tv/lucasmml',
+  },
+  {
+    src: { kikano },
+    alt: 'Boas vindas a FiredLabs',
+    title: 'Boa vindas a FiredLabs',
+    avatar: { lucasMelo },
+    channelName: 'Lucasmml',
+    timer: '00:01:00',
+    link: 'https:"//twitch.tv/lucasmml',
+  },
+  {
+    src: { kikano },
+    alt: 'Boas vindas a FiredLabs',
+    title: 'Boa vindas a FiredLabs',
+    avatar: { lucasMelo },
+    channelName: 'Lucasmml',
+    timer: '00:01:00',
+    link: 'https:"//twitch.tv/lucasmml',
+  },
+  {
+    src: { kikano },
+    alt: 'Boas vindas a FiredLabs',
+    title: 'Boa vindas a FiredLabs',
+    avatar: { lucasMelo },
+    channelName: 'Lucasmml',
+    timer: '00:01:00',
+    link: 'https:"//twitch.tv/lucasmml',
+  },
+];
 
 function App() {
   return (
     <>
-      <HeaderFired>
-        <Wrapper>
-          <LogoFired />
-
-          <ButtonFired as="a" href="/video/new">
-            Novo vídeo
-          </ButtonFired>
-        </Wrapper>
-      </HeaderFired>
+      <HeaderOpen />
 
       <BannerFired>
         <Text>
-          <TagFired>PixelArt</TagFired>
-          <TitleFired>Gueio Runner - Kikano Reeves</TitleFired>
+          <TagFired>Criadores de jogos</TagFired>
+          <TitleFired>Boas vindas a FiredLabs</TitleFired>
           <DescriptionFired>
-            O Lucas Melo nesse vídeo fez o personagem Kikano Reeves do jogo
-            Gueio Runner
+            Aqui nós trocamos conhecimento sobre como criar jogos felizes, nós
+            BRs jogamos muito então está na hora de também criamos muitos jogos!
           </DescriptionFired>
         </Text>
 
         <ThumbFired
           src={kikano}
-          alt="Thumb do Lucas Melo fazendo o Kikano Reeves"
-          title="Gueio Runner - Kikano Reeves"
+          alt="Boas vindas a FiredLabs"
+          title="Boa vindas a FiredLabs"
           avatar={lucasMelo}
-          channelName="Lucasmml"
-          timer="02:20:34"
+          channelName="FiredLabs"
+          timer="00:01:00"
         />
       </BannerFired>
 
-      <FooterFired>
-        <LogoFired />
-        <p>
-          Site feito na
-          <a href="https://alura.com.br" aria-label="Logo">
-            <LogoImersao />
-          </a>
-        </p>
-      </FooterFired>
+      <SectionFired>
+        <TagFired>Gueio Runner</TagFired>
+
+        <DescriptionFired>
+          #GueioRunner é jogo multiplayer 2d criado todo em pixel art e
+          desenvolvido ao vivo por dois canais na twitch, as pessoas por trás do
+          projeto são muitas mas quem leva nas costas a ideia são: Joviane
+          Jardim, Lucas Mello e Marco Bruno.
+        </DescriptionFired>
+
+        {/* <CarouselFired videos={videos} /> */}
+      </SectionFired>
+
+      <FooterOpen />
     </>
   );
 }
