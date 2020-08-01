@@ -6,7 +6,7 @@ import container from '../../styles/tools/container';
 export const HeaderFired = styled.header`
   background-color: var(--color-arsenic);
   border-bottom: 4px solid var(--color-floral-white);
-  padding: 20rem 0;
+  padding: 20rem 30rem;
 
   @media (max-width: 800px) {
     padding: 15rem 16rem;
@@ -17,7 +17,6 @@ export const Wrapper = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  ${container};
 
   @media (max-width: 800px) {
     justify-content: center;

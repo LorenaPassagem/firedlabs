@@ -9,40 +9,113 @@ import lucasMelo from './assets/img/lucas-melo.png';
 import HeaderOpen from './components/HeaderOpen';
 import FooterOpen from './components/FooterOpen';
 import SectionFired from './components/SectionFired';
+import CarouselFired from './components/CarouselFired';
 
 const videos = [
   {
-    src: { kikano },
+    src: kikano,
     alt: 'Boas vindas a FiredLabs',
     title: 'Boa vindas a FiredLabs',
-    avatar: { lucasMelo },
+    avatar: lucasMelo,
     channelName: 'Lucasmml',
     timer: '00:01:00',
     link: 'https:"//twitch.tv/lucasmml',
   },
   {
-    src: { kikano },
+    src: kikano,
     alt: 'Boas vindas a FiredLabs',
     title: 'Boa vindas a FiredLabs',
-    avatar: { lucasMelo },
+    avatar: lucasMelo,
     channelName: 'Lucasmml',
     timer: '00:01:00',
     link: 'https:"//twitch.tv/lucasmml',
   },
   {
-    src: { kikano },
+    src: kikano,
     alt: 'Boas vindas a FiredLabs',
     title: 'Boa vindas a FiredLabs',
-    avatar: { lucasMelo },
+    avatar: lucasMelo,
     channelName: 'Lucasmml',
     timer: '00:01:00',
     link: 'https:"//twitch.tv/lucasmml',
   },
   {
-    src: { kikano },
+    src: kikano,
     alt: 'Boas vindas a FiredLabs',
     title: 'Boa vindas a FiredLabs',
-    avatar: { lucasMelo },
+    avatar: lucasMelo,
+    channelName: 'Lucasmml',
+    timer: '00:01:00',
+    link: 'https:"//twitch.tv/lucasmml',
+  },
+  {
+    src: kikano,
+    alt: 'Boas vindas a FiredLabs',
+    title: 'Boa vindas a FiredLabs',
+    avatar: lucasMelo,
+    channelName: 'Lucasmml',
+    timer: '00:01:00',
+    link: 'https:"//twitch.tv/lucasmml',
+  },
+  {
+    src: kikano,
+    alt: 'Boas vindas a FiredLabs',
+    title: 'Boa vindas a FiredLabs',
+    avatar: lucasMelo,
+    channelName: 'Lucasmml',
+    timer: '00:01:00',
+    link: 'https:"//twitch.tv/lucasmml',
+  },
+  {
+    src: kikano,
+    alt: 'Boas vindas a FiredLabs',
+    title: 'Boa vindas a FiredLabs',
+    avatar: lucasMelo,
+    channelName: 'Lucasmml',
+    timer: '00:01:00',
+    link: 'https:"//twitch.tv/lucasmml',
+  },
+  {
+    src: kikano,
+    alt: 'Boas vindas a FiredLabs',
+    title: 'Boa vindas a FiredLabs',
+    avatar: lucasMelo,
+    channelName: 'Lucasmml',
+    timer: '00:01:00',
+    link: 'https:"//twitch.tv/lucasmml',
+  },
+  {
+    src: kikano,
+    alt: 'Boas vindas a FiredLabs',
+    title: 'Boa vindas a FiredLabs',
+    avatar: lucasMelo,
+    channelName: 'Lucasmml',
+    timer: '00:01:00',
+    link: 'https:"//twitch.tv/lucasmml',
+  },
+  {
+    src: kikano,
+    alt: 'Boas vindas a FiredLabs',
+    title: 'Boa vindas a FiredLabs',
+    avatar: lucasMelo,
+    channelName: 'Lucasmml',
+    timer: '00:01:00',
+    link: 'https:"//twitch.tv/lucasmml',
+  },
+  {
+    src: kikano,
+    alt: 'Boas vindas a FiredLabs',
+    title: 'Boa vindas a FiredLabs',
+    avatar: lucasMelo,
+    channelName: 'Lucasmml',
+    timer: '00:01:00',
+    link: 'https:"//twitch.tv/lucasmml',
+  },
+  {
+    src: kikano,
+    alt: 'Boas vindas a FiredLabs',
+    title: 'Boa vindas a FiredLabs',
+    avatar: lucasMelo,
     channelName: 'Lucasmml',
     timer: '00:01:00',
     link: 'https:"//twitch.tv/lucasmml',
@@ -84,7 +157,8 @@ function App() {
           Jardim, Lucas Mello e Marco Bruno.
         </DescriptionFired>
 
-        {/* <CarouselFired videos={videos} /> */}
+        <TagFired small>Lucas Melo - PixelArt</TagFired>
+        <CarouselFired videos={videos} />
       </SectionFired>
 
       <FooterOpen />
