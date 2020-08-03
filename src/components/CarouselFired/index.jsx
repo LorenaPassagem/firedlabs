@@ -4,10 +4,10 @@ import { CarouselStyle, Wrapper, Right } from './styles';
 import ThumbFired from '../ThumbFired';
 
 function CarouselFired({ videos }) {
-  const [moveRight, setMoveRight] = useState(false);
+  const [moveRight, setMoveRight] = useState(0);
 
   function actionRight() {
-    setMoveRight(true);
+    setMoveRight((oldMoveRight) => oldMoveRight + 1);
   }
 
   return (
