@@ -1,12 +1,11 @@
 import styled from 'styled-components';
 import ButtonFired from '../ButtonFired';
 import LogoFired from '../LogoFired';
-import container from '../../styles/tools/container';
 
 export const HeaderFired = styled.header`
-  background-color: var(--color-arsenic);
-  border-bottom: 4px solid var(--color-floral-white);
+  background-color: var(--color-black-medium);
   padding: 20rem 30rem;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 
   @media (max-width: 800px) {
     padding: 15rem 16rem;

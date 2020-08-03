@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import container from '../../styles/tools/container';
 import TagFired from '../TagFired';
 import DescriptionFired from '../DescriptionFired';
 
