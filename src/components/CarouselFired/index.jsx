@@ -14,8 +14,12 @@ function CarouselFired({ videos }) {
     setMove((oldMove) => oldMove + 1);
   }
 
+  function leftShow() {
+    return move < 0;
+  }
+
   return (
-    <CarouselStyle>
+    <CarouselStyle leftShow={leftShow()} rightShow={true}>
       <Left onClick={actionLeft} />
       <Wrapper move={move}>
         {videos.map(({ src, alt, title, avatar, channelName, timer, link }) => (
