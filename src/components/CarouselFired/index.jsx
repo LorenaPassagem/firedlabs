@@ -1,23 +1,31 @@
-import React from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
-import { CarouselStyle, Right } from './styles';
+import { CarouselStyle, Wrapper, Right } from './styles';
 import ThumbFired from '../ThumbFired';
 
 function CarouselFired({ videos }) {
+  const [moveRight, setMoveRight] = useState(false);
+
+  function actionRight() {
+    setMoveRight(true);
+  }
+
   return (
     <CarouselStyle>
-      {videos.map(({ src, alt, title, avatar, channelName, timer, link }) => (
-        <ThumbFired
-          src={src}
-          alt={alt}
-          title={title}
-          avatar={avatar}
-          channelName={channelName}
-          timer={timer}
-          link={link}
-        />
-      ))}
-      <Right />
+      <Wrapper moveRight={moveRight}>
+        {videos.map(({ src, alt, title, avatar, channelName, timer, link }) => (
+          <ThumbFired
+            src={src}
+            alt={alt}
+            title={title}
+            avatar={avatar}
+            channelName={channelName}
+            timer={timer}
+            link={link}
+          />
+        ))}
+      </Wrapper>
+      <Right onClick={actionRight} />
     </CarouselStyle>
   );
 }
