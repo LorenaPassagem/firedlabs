@@ -2,18 +2,18 @@ import styled, { css } from 'styled-components';
 import { Background, WrapperThumb } from '../ThumbFired/styles';
 import arrow from '../../assets/img/arrow.svg';
 
+const thumbWidth = 400;
+const spaceRight = 20;
+const spaceRightLeft = 30;
+
 export const Wrapper = styled.div`
+  --space-right: ${spaceRight}rem;
   display: flex;
   transition: transform 200ms linear;
 
   & > ${Background} {
-    margin-right: 20rem;
+    margin-right: var(--space-right);
   }
-
-  ${({ move }) =>
-    css`
-      transform: translateX(calc(var(--thumb-width) * ${move}));
-    `}
 `;
 
 const Arrow = css`
@@ -69,29 +69,59 @@ export const Left = styled.button`
   }
 `;
 
+function moveCarousel(move, moveLastRight) {
+  const oneStep = (thumbWidth + spaceRight) * move;
+  const lastStep = (moveLastRight + spaceRightLeft) * -1;
+  if (oneStep !== 0 && oneStep < lastStep) {
+    return css`
+      & > ${Wrapper} {
+        transform: translateX(${lastStep}px);
+      }
+
+      &:hover > ${Right} {
+        display: none;
+        opacity: 0;
+      }
+    `;
+  }
+
+  return css`
+    & > ${Wrapper} {
+      transform: translateX(${oneStep}px);
+    }
+  `;
+}
+
+function leftShow(move) {
+  return move < 0;
+}
+
 export const CarouselStyle = styled.div`
   --space-top-bottom: 20rem;
-  --thumb-width: 400px;
+  --space-right-left: ${spaceRightLeft}rem;
+  --thumb-width: ${thumbWidth}px;
   position: relative;
   display: flex;
   align-items: center;
   align-self: flex-start;
   box-sizing: border-box;
   width: 100%;
-  padding: var(--space-top-bottom) 30rem;
+  padding: var(--space-top-bottom) var(--space-right-left);
   overflow: hidden;
 
   & ${WrapperThumb} {
     width: var(--thumb-width);
+    box-sizing: border-box;
   }
 
   &:hover > ${Right} {
+    display: block;
     opacity: 0.8;
   }
 
   &:hover > ${Left} {
-    ${({ leftShow }) =>
-      leftShow
+    ${({ move }) =>
+      leftShow(move)
         ? css`
             display: block;
             opacity: 0.8;
@@ -106,4 +136,6 @@ export const CarouselStyle = styled.div`
     opacity: 0.9;
     transform-origin: right center;
   }
+
+  ${({ move, moveLastRight }) => moveCarousel(move, moveLastRight)}
 `;
