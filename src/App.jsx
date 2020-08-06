@@ -1,8 +1,6 @@
 import React from 'react';
-import { BannerFired, Text } from './components/BannerFired';
+import BannerFired from './components/BannerFired';
 import TagFired from './components/TagFired';
-import TitleFired from './components/TitleFired';
-import DescriptionFired from './components/DescriptionFired';
 import ThumbFired from './components/ThumbFired';
 import kikano from './assets/img/kikano.png';
 import lucasMelo from './assets/img/lucas-melo.png';
@@ -10,6 +8,7 @@ import HeaderOpen from './components/HeaderOpen';
 import FooterOpen from './components/FooterOpen';
 import SectionFired from './components/SectionFired';
 import CarouselFired from './components/CarouselFired';
+import DescriptionFired from './components/DescriptionFired';
 
 const videos = [
   {
@@ -127,16 +126,13 @@ function App() {
     <>
       <HeaderOpen />
 
-      <BannerFired>
-        <Text>
-          <TagFired>Criadores de jogos</TagFired>
-          <TitleFired>Boas vindas a FiredLabs</TitleFired>
-          <DescriptionFired>
-            Aqui nós trocamos conhecimento sobre como criar jogos felizes, nós
-            BRs jogamos muito então está na hora de também criamos muitos jogos!
-          </DescriptionFired>
-        </Text>
-
+      <BannerFired
+        tag="Criadores de jogos"
+        title="Boas vindas a FiredLabs"
+        description="Aqui nós trocamos conhecimento sobre como criar jogos felizes, nós
+            BRs jogamos muito então está na hora de também criarmos muitos
+            jogos!"
+      >
         <ThumbFired
           src={kikano}
           alt="Boas vindas a FiredLabs"
