@@ -5,6 +5,7 @@ const LinkFired = styled.a`
   font-weight: bold;
   color: var(--color-fiery-rose);
   cursor: pointer;
+  text-decoration: underline;
 `;
 
 export default LinkFired;
