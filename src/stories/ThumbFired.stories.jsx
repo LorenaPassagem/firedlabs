@@ -22,6 +22,8 @@ export const Default = () => (
       src={kikano}
       alt="Criando jogos em pixel art"
       avatar={lucasMelo}
+      channelName="Lucasmml"
+      timer="00:20:00"
     />
   </div>
 );
