@@ -28,15 +28,10 @@ const ButtonFired = styled.button`
   &::after {
     content: '${({ children }) => children}';
     position: absolute;
-    
   }
 
   &:hover::before {
     transform: translateX(-40%) scaleX(1.5) skew(-30deg);
-  }
-
-  &:active::after {
-    transform: scale(2);
   }
 `;
 
