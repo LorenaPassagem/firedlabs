@@ -56,6 +56,7 @@ export const Background = styled.div`
   --border: 4rem;
   --move-space: calc(var(--space) * -1);
 
+  display: inline-block;
   position: relative;
   background-color: var(--color-fiery-rose);
 
