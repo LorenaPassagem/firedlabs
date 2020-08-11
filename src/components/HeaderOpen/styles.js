@@ -25,13 +25,16 @@ export const Wrapper = styled.div`
     }
 
     & > ${ButtonFired} {
+      box-sizing: border-box;
       background-color: var(--color-fiery-rose);
       border-radius: 0;
       border: 0;
       position: fixed;
       bottom: 0;
       left: 0;
+      z-index: 10;
       width: 100vw;
+      box-shadow: 0 -4px 4px rgba(0, 0, 0, 0.25);
     }
   }
 `;
