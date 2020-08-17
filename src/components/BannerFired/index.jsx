@@ -5,9 +5,9 @@ import TagFired from '../TagFired';
 import TitleFired from '../TitleFired';
 import DescriptionFired from '../DescriptionFired';
 
-function BannerFired({ children, tag, title, description }) {
+function BannerFired({ children, tag, title, description, column }) {
   return (
-    <BannerStyle>
+    <BannerStyle column={column}>
       <Text>
         <TagFired>{tag}</TagFired>
         <TitleFired>{title}</TitleFired>
@@ -19,11 +19,16 @@ function BannerFired({ children, tag, title, description }) {
   );
 }
 
+BannerFired.defaultProps = {
+  column: false,
+};
+
 BannerFired.propTypes = {
   children: PropTypes.element.isRequired,
   tag: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
+  column: PropTypes.bool,
 };
 
 export default BannerFired;

@@ -14,6 +14,7 @@ const SectionFired = styled.section`
 
   & > ${TagFired}:not(:first-child) {
     margin-left: 30rem;
+    margin-bottom: 5rem;
     align-self: flex-start;
   }
 

@@ -5,7 +5,6 @@ const InputFired = styled.input`
   font-size: 30rem;
   padding: 8rem 10rem;
   font-family: inherit;
-  max-width: 640px;
   width: 100%;
   border: 2px solid var(--color-fiery-rose);
   color: var(--color-eerie-black);

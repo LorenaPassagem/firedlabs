@@ -1,9 +1,9 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import container from '../../styles/tools/container';
 import TagFired from '../TagFired';
 import TitleFired from '../TitleFired';
 import DescriptionFired from '../DescriptionFired';
-import { WrapperThumb } from '../ThumbFired/styles';
+import { WrapperThumb, Background } from '../ThumbFired/styles';
 
 export const Text = styled.div`
   padding-top: 10rem;
@@ -22,10 +22,13 @@ export const Text = styled.div`
     width: 468px;
     max-width: none;
 
+    ${({ column }) =>
+      column &&
+      css`
     & > ${TitleFired}, & > ${DescriptionFired} {
-      display: none;
-    }
-  }
+        display: none;
+      }
+    }`}
 
   @media (max-width: 500px) {
     width: 100%;
@@ -55,6 +58,22 @@ export const BannerStyle = styled.section`
   align-items: center;
   max-height: 70vh;
   height: 100vh;
+
+  ${({ column }) =>
+    column &&
+    css`
+      flex-direction: column;
+      text-align: center;
+      max-height: none;
+      height: auto;
+      padding-top: 40rem;
+      padding-bottom: 40rem;
+
+      & ${Background} {
+        margin-top: 30rem;
+        margin-bottom: 30rem;
+      }
+    `}
 
   @media (max-width: 1300px) {
     flex-direction: column;
