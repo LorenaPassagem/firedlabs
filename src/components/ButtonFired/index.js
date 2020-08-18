@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 const ButtonFired = styled.button`
   display: flex;
+  background-color: transparent;
   justify-content: center;
   align-items: center;
   position: relative;
