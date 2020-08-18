@@ -5,8 +5,7 @@ import BannerFired from '../../../components/BannerFired';
 import ThumbFired from '../../../components/ThumbFired';
 import kikano from '../../../assets/img/kikano.png';
 import lucasMelo from '../../../assets/img/lucas-melo.png';
-import FieldFired from '../../../components/FieldFired';
-import ButtonFired from '../../../components/ButtonFired';
+import FormGueioRunner from '../../../components/FormGueioRunner';
 
 function GueioRunner() {
   return (
@@ -28,13 +27,7 @@ function GueioRunner() {
           timer="00:01:00"
         />
 
-        <FieldFired
-          id="email"
-          label="Email para recerber o jogo"
-          placeholder="Seu email"
-        />
-
-        <ButtonFired>Enviar</ButtonFired>
+        <FormGueioRunner />
       </BannerFired>
 
       <FooterOpen />
